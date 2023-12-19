@@ -2,4 +2,5 @@
 
 members = [
 	"my_utils",
+  "commands",
 ]
