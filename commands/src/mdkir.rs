@@ -1,4 +1,4 @@
-use std::fs 
+use std::fs;
 
 pub fn mkdir(args: Vec<String>) -> Result<(), &'static str> {
     if args.len() != 2 {
