@@ -1,5 +1,5 @@
 use std::env;
-use commands::myls;
+use commands::{*};
 fn main() {
     let args: Vec<String> = env::args().collect();
     if args.len() == 1 {
@@ -9,6 +9,8 @@ fn main() {
         let args = &args[1..];
         match args[0].as_str() {
             "myls" => myls::myls(args.to_vec()),
+            "mkdir" => mkdir::mkdir(args.to_vec()).unwrap(),
+
             _ => println!("Unknown command"),
         }
     }
