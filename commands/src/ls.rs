@@ -5,7 +5,7 @@
 //use std::env;
 use std::fs;
 
-pub fn myls(args: Vec<String>) {
+pub fn ls(args: Vec<String>) {
         let paths = match args.len() {
             1 => fs::read_dir(".").unwrap(),
             _ => fs::read_dir(&args[1]).unwrap()
@@ -21,8 +21,8 @@ pub fn myls(args: Vec<String>) {
 mod tests {
     use super::*;
     #[test]
-    fn test_myls() {
-        let args = vec![String::from("myls"), String::from("src")];
-        myls(args);
+    fn test_ls() {
+        let args = vec![String::from("ls"), String::from("src")];
+        ls(args);
     }
 }

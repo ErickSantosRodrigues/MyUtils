@@ -8,7 +8,7 @@ fn main() {
         //remove the first argument 
         let args = &args[1..];
         match args[0].as_str() {
-            "myls" => myls::myls(args.to_vec()),
+            "ls" => ls::ls(args.to_vec()),
             "mkdir" => mkdir::mkdir(args.to_vec()).unwrap(),
 
             _ => println!("Unknown command"),
