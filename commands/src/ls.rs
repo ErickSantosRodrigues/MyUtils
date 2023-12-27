@@ -18,8 +18,6 @@ pub fn ls(args: Vec<String>) {
         }
 }
 
-
-
 #[cfg(test)]
 mod tests {
     use super::*;

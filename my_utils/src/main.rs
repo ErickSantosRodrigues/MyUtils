@@ -10,7 +10,7 @@ fn main() {
         match args[0].as_str() {
             "ls" => ls::ls(args.to_vec()),
             "mkdir" => mkdir::mkdir(args.to_vec()).unwrap(),
-
+            "rm" => rm::rm(args.to_vec()),
             _ => println!("Unknown command"),
         }
     }
