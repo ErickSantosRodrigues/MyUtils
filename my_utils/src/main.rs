@@ -11,6 +11,7 @@ fn main() {
             "ls" => ls::ls(args.to_vec()),
             "mkdir" => mkdir::mkdir(args.to_vec()).unwrap(),
             "rm" => rm::rm(args.to_vec()),
+            "touch" => touch::touch(args.to_vec()).unwrap(),
             _ => println!("Unknown command"),
         }
     }
